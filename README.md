@@ -42,6 +42,10 @@
 - **Drag-and-Drop `.ipa` Sideloading**
   - Drop any `.ipa` file directly into BeamIPA or use **Import .ipa** from the toolbar.
   - Automatically strips incompatible app extensions (`PlugIns` and `Watch` companions) and rewrites bundle identifiers so free Personal Team signing succeeds cleanly.
+- **Install & Update `.ipa` Directly from GitHub**
+  - Click **From GitHub** and paste any GitHub repository URL, `.git` clone URL, or direct `.ipa` link to discover `.ipa` files in GitHub Releases or repository files.
+  - Automatically compares the repository name against your cached apps, displays your currently installed version, lets you link the repository (**Link Repo**), and alerts you with an **Out of date** badge when a newer release is published.
+  - Click **Update IPA** next to any linked app to browse available release versions, sign, and beam the update in place.
 - **Two Signing & Provisioning Modes**
   - **Apple ID + Anisette (No Xcode Required):** Sign in with your Apple ID (supporting 2FA) and use an Anisette v3 server (or pick from the built-in server directory) to generate signing certificates and provisioning profiles.
   - **Xcode Automatic Provisioning:** Use an Apple account already signed into Xcode (`Xcode → Settings → Accounts`) to register your device and generate `.mobileprovision` files automatically, then sign with your macOS Keychain development certificate.
@@ -102,9 +106,14 @@ Click **Sign In** or **Signing Setup** (or open **Settings → Provisioning**):
   3. In BeamIPA **Settings → Provisioning**, select **Xcode** as the Auto-Provisioning & Refresh Method and choose your macOS Keychain development certificate.
 
 ### 3. Sideload an `.ipa`
-1. Select your paired device in the left sidebar.
-2. Drag and drop an `.ipa` file onto the BeamIPA window, or click **Import .ipa** in the toolbar.
-3. Click **Sign & Install**. BeamIPA will patch the bundle, provision/sign the app, and install it wirelessly (or over USB) onto your device.
+- **From a Local File:**
+  1. Select your paired device in the left sidebar.
+  2. Drag and drop an `.ipa` file onto the BeamIPA window, or click **Import .ipa** in the toolbar.
+  3. Click **Sign & Install**. BeamIPA will patch the bundle, provision/sign the app, and install it wirelessly (or over USB) onto your device.
+- **Directly from GitHub:**
+  1. Click **From GitHub** in the toolbar and paste a GitHub repository URL, `.git` clone URL, or direct `.ipa` link.
+  2. Click **Find .ipa**—if the repository matches a cached app, BeamIPA shows your installed version and lets you link the repository (**Link Repo**).
+  3. Select the release/version you want and click **Fetch, Sign & Install** (or **Update, Sign & Install**). Linked apps automatically check for newer releases and show an **Update IPA** button when out of date.
 
 ### 4. Refresh Apps Before They Expire
 - Free Apple ID (Personal Team) signatures expire after **7 days**.
