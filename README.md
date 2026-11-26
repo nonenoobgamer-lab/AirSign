@@ -20,6 +20,20 @@
 
 ---
 
+## Version Notes
+
+### v1.1
+- **Install & Update from GitHub:** Paste any GitHub repository URL, `.git` clone URL, or `.ipa` link to fetch, sign, and beam `.ipa` releases directly to your Apple TV, iPhone, or iPad.
+- **Cached App Matching & Repo Linking:** Automatically matches GitHub repository names against your cached apps, shows your currently installed version, and lets you link the repository for one-click **Update IPA** version selection.
+- **Automatic Out-of-Date Detection:** Checks linked GitHub repositories automatically and highlights out-of-date `.ipa` apps with an **Out of date** badge.
+- **In-App Help & Setup Guide:** Added a dedicated **Help** button in the toolbar with step-by-step setup, signing mode comparisons, 7-day limit info, and troubleshooting.
+- **UI & Update Improvements:** Added a bottom sideloading progress bar, menu bar app icon, cleaner Settings **Method** layout, and `BeamIPA` rebrand.
+
+### v1.0
+- Initial public release of BeamIPA for Apple Silicon macOS with wireless/USB discovery, Apple ID + Anisette v3 and Xcode Automatic Provisioning support, Personal Team guardrails, and menu bar companion.
+
+---
+
 ## Key Features
 
 - **Wireless & USB Device Discovery**
